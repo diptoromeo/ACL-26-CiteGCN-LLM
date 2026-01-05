@@ -90,25 +90,84 @@ Both graphs are normalized and processed using standard GCN message passing.
 
 CiteGCN-LLM is trained end-to-end with a **joint binary cross-entropy loss**:
 
-𝐿
-=
-𝐿
-GCN
-+
-𝐿
-LLM
-L=L
-GCN
-	​
-
-+L
-LLM
-	​
-
+	​$$
+\mathcal{L} = \mathcal{L}_{\mathrm{GCN}} + \mathcal{L}_{\mathrm{LLM}}
+$$
 
 - Uses BCEWithLogitsLoss
 
 - Supports independent multi-label predictions
 
 - Single backpropagation step updates both branches
+
+## 📈 Experimental Results
+
+- Consistently outperforms:
+
+	- GCN, GAT, GraphSAGE, GIN
+
+	- Graph Transformers (Graph-BERT, Graphormer)
+
+	- LLM-augmented GNN baselines
+
+- Achieves 93%+ accuracy on arXiv and DBLP
+
+- RPCG-2 shows strong gains on socially connected datasets
+
+##🗂️ Repository Structure
+├── data/
+│   ├── arxiv/
+│   ├── dblp/
+│   ├── elsevier/
+│   └── pubmed/
+├── graph/
+│   ├── build_rpcg1.py
+│   ├── build_rpcg2.py
+├── models/
+│   ├── gcn.py
+│   ├── llm_encoder.py
+│   └── citegcn_llm.py
+├── train.py
+├── evaluate.py
+├── utils/
+└── README.md
+
+
+## 🔧 Requirements
+
+- Python ≥ 3.9
+
+- PyTorch
+
+- PyTorch Geometric
+
+- HuggingFace Transformers
+
+- NumPy, SciPy, scikit-learn
+
+- NLTK
+
+
+## 🚀 Usage (High-Level)
+
+Preprocess datasets and construct citation graphs
+
+1. Extract LLM embeddings from abstracts
+
+2. Train CiteGCN-LLM jointly on graph and text
+
+3. Evaluate classification accuracy and F1 scores
+
+_(Detailed scripts and configurations are provided in the repository.)_
+
+## Citation
+
+```bibtex
+@inproceedings{citegcnllm2025,
+  title     = {CiteGCN-LLM: Citation-Aware Research Paper Classification via Graph Convolutional Networks and Large Language Models},
+  author    = {Anonymous},
+  booktitle = {Proceedings of the ACL},
+  year      = {2026}
+}
+
 
