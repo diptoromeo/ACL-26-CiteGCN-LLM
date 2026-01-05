@@ -1,42 +1,44 @@
 # ACL-26-CiteGCN-LLM
-Citation-Aware Research Paper Classification via Graph Convolutional Networks and Large Language Models
+**Citation-Aware Research Paper Classification via Graph Convolutional Networks and Large Language Models**
 
-This repository contains the official implementation of CiteGCN-LLM, a unified framework for research paper classification and recommendation that jointly models citation structure and textual semantics using Graph Convolutional Networks (GCN) and Large Language Models (LLMs).
+This repository contains the official implementation of **CiteGCN-LLM**, a unified framework for research paper classification and recommendation that jointly models citation structure and textual semantics using Graph Convolutional Networks (GCNs) and Large Language Models (LLMs).
 
-📌 Overview
+The framework constructs heterogeneous citation graphs and integrates them with transformer-based textual representations to achieve state-of-the-art performance on scholarly datasets.
 
-Modern scholarly corpora exhibit rich relational structures (citations, co-authorship) that cannot be fully captured by text-only models. CiteGCN-LLM addresses this limitation by:
+## 📌 **Overview**
 
-Constructing heterogeneous citation graphs
+Scholarly documents are inherently interconnected through citations, authorship, and shared terminology. Purely text-based models fail to capture these relational signals, while graph-only methods lack deep semantic understanding.
 
-Injecting transformer-pooled semantic embeddings
+**CiteGCN-LLM bridges this gap by:**
 
-Jointly optimizing graph-based and text-based predictors under a unified multi-label objective
+- [a](#Modeling citation topology using GCNs)
 
-The framework achieves state-of-the-art performance on multiple large-scale citation datasets.
+- [b] (#Extracting contextual semantics from abstracts using pretrained LLMs)
 
-🧠 Key Contributions
+-[c]J (#ointly optimizing both branches under a unified multi-label objective)
 
-Two novel citation graph constructions
+# 🧠 **Key Contributions**
 
-RPCG-1: Paper–Word–Citation graph (TF-IDF + PPMI + citation edges)
+Two novel heterogeneous citation graphs
 
-RPCG-2: Paper–Author–Citation graph (co-authorship + citation edges)
+RPCG-1: Paper–Word–Citation graph (TF-IDF + PMI + citations)
 
-Joint GCN–LLM training
+RPCG-2: Paper–Author–Citation graph (co-authorship + citations)
+
+Unified GCN–LLM architecture
 
 Structural logits from GCN
 
-Semantic logits from a pretrained transformer
+Semantic logits from transformer encoder
 
-Optimized using BCEWithLogitsLoss
+Joint training with BCEWithLogits loss
 
-Top-K label generation
+Top-K TF-IDF based labeling
 
-Automatic multi-label supervision derived from TF-IDF statistics over paper titles
+Interpretable, personalized multi-label supervision
 
 Extensive evaluation
 
-arXiv, DBLP, Elsevier, PubMed
+arXiv, DBLP, Elsevier, and PubMed
 
-Robust gains in Accuracy and F1
+Significant gains over GCNs, Graph Transformers, and LLM-only baselines
