@@ -58,3 +58,30 @@ Scholarly documents are inherently interconnected through citations, authorship,
 
   - Outputs are combined at the logit level
 
+## 📊 **Graph Construction**
+**RPCG-1: Paper–Word–Citation Graph**
+
+  - Paper–Word edges weighted by TF-IDF
+
+  - Word–Word edges weighted by Positive PMI
+
+  - Paper–Paper edges weighted by citation counts
+
+**RPCG-2: Paper–Author–Citation Graph**
+
+  - Paper–Author membership edges
+
+  - Author–Author edges via co-authorship (PMI)
+
+  - Paper–Paper citation edges
+
+Both graphs are normalized and processed using standard GCN message passing.
+
+## 🏷️ Labeling Strategy
+
+- Extract Top-K globally salient terms from paper titles using TF-IDF
+
+- Assign each paper a multi-hot label vector
+
+- Enables personalized and interpretable classification
+
