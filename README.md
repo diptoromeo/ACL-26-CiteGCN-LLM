@@ -1,1 +1,1 @@
-# ACL-26-CiteGCN-LLM-
+# ACL-26-CiteGCN-LLM
