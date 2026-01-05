@@ -85,3 +85,30 @@ Both graphs are normalized and processed using standard GCN message passing.
 
 - Enables personalized and interpretable classification
 
+
+## ⚙️ Training Objective
+
+CiteGCN-LLM is trained end-to-end with a **joint binary cross-entropy loss**:
+
+𝐿
+=
+𝐿
+GCN
++
+𝐿
+LLM
+L=L
+GCN
+	​
+
++L
+LLM
+	​
+
+
+- Uses BCEWithLogitsLoss
+
+- Supports independent multi-label predictions
+
+- Single backpropagation step updates both branches
+
