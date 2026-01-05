@@ -11,34 +11,34 @@ Scholarly documents are inherently interconnected through citations, authorship,
 
 **CiteGCN-LLM bridges this gap by:**
 
-- [a](#Modeling citation topology using GCNs)
+  - Modeling citation topology using GCNs
 
-- [b] (#Extracting contextual semantics from abstracts using pretrained LLMs)
+  - Extracting contextual semantics from abstracts using pretrained LLMs
 
--[c]J (#ointly optimizing both branches under a unified multi-label objective)
+  - ointly optimizing both branches under a unified multi-label objective
 
-# 🧠 **Key Contributions**
+## 🧠 **Key Contributions**
 
-Two novel heterogeneous citation graphs
+- **Two novel heterogeneous citation graphs**
 
-RPCG-1: Paper–Word–Citation graph (TF-IDF + PMI + citations)
+  -RPCG-1: Paper–Word–Citation graph (TF-IDF + PMI + citations)
 
-RPCG-2: Paper–Author–Citation graph (co-authorship + citations)
+  - RPCG-2: Paper–Author–Citation graph (co-authorship + citations)
 
-Unified GCN–LLM architecture
+- **Unified GCN–LLM architecture**
 
-Structural logits from GCN
+  - Structural logits from GCN
 
-Semantic logits from transformer encoder
+  - Semantic logits from transformer encoder
 
-Joint training with BCEWithLogits loss
+  - Joint training with BCEWithLogits loss
 
-Top-K TF-IDF based labeling
+- **Top-K TF-IDF based labeling**
 
-Interpretable, personalized multi-label supervision
+  - Interpretable, personalized multi-label supervision
 
-Extensive evaluation
+- **Extensive evaluation**
 
-arXiv, DBLP, Elsevier, and PubMed
+  - arXiv, DBLP, Elsevier, and PubMed
 
-Significant gains over GCNs, Graph Transformers, and LLM-only baselines
+  - Significant gains over GCNs, Graph Transformers, and LLM-only baselines
