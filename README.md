@@ -21,7 +21,7 @@ Scholarly documents are inherently interconnected through citations, authorship,
 
 - **Two novel heterogeneous citation graphs**
 
-  -RPCG-1: Paper–Word–Citation graph (TF-IDF + PMI + citations)
+  - RPCG-1: Paper–Word–Citation graph (TF-IDF + PMI + citations)
 
   - RPCG-2: Paper–Author–Citation graph (co-authorship + citations)
 
@@ -42,3 +42,19 @@ Scholarly documents are inherently interconnected through citations, authorship,
   - arXiv, DBLP, Elsevier, and PubMed
 
   - Significant gains over GCNs, Graph Transformers, and LLM-only baselines
+ 
+
+## 🏗️ **Framework Architecture**
+  Paper Abstracts ──▶ LLM Encoder ──▶ Semantic Logits
+       │
+       ▼
+  Citation Graph ──▶ GCN Layers ──▶ Structural Logits
+       │
+       └────────────── Fusion ──────────────▶ Final Prediction
+
+  - GCN captures citation and relational structure
+
+  - LLM captures deep semantic meaning
+
+  - Outputs are combined at the logit level
+
