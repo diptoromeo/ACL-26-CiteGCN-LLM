@@ -53,7 +53,7 @@ Paper Abstracts  -->  LLM Encoder  -->  Semantic Logits
 Citation Graph  -->  GCN Layers  -->  Structural Logits
         |
         +---------------- Fusion ----------------> Final Prediction
-
+```
 
   - GCN captures citation and relational structure
 
@@ -102,6 +102,7 @@ CiteGCN-LLM is trained end-to-end with a **joint binary cross-entropy loss**:
 
 - Single backpropagation step updates both branches
 
+
 ## 📈 Experimental Results
 
 - Consistently outperforms:
@@ -136,9 +137,9 @@ CiteGCN-LLM is trained end-to-end with a **joint binary cross-entropy loss**:
 ├── train.py
 ├── evaluate.py
 ├── utils/
-└── README.md```
+└── README.md
 
-
+```
 
 ## 🔧 Requirements
 
@@ -167,6 +168,8 @@ Preprocess datasets and construct citation graphs
 
 _(Detailed scripts and configurations are provided in the repository.)_
 
+
+
 ## Citation
 
 ```bibtex
@@ -176,5 +179,5 @@ _(Detailed scripts and configurations are provided in the repository.)_
   booktitle = {Proceedings of the ACL},
   year      = {2026}
 }
-
+```
 
