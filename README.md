@@ -94,7 +94,7 @@ Both graphs are normalized and processed using standard GCN message passing.
 
 CiteGCN-LLM is trained end-to-end with a **joint binary cross-entropy loss**:
 
-	​$$\mathcal{L} = \mathcal{L}_{\mathrm{GCN}} + \mathcal{L}_{\mathrm{LLM}}$$
+![loss](https://latex.codecogs.com/svg.image?\mathcal{L}=\mathcal{L}_{\mathrm{GCN}}+\mathcal{L}_{\mathrm{LLM}})
 
 - Uses BCEWithLogitsLoss
 
