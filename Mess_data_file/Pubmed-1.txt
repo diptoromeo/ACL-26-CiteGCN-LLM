@@ -1,0 +1,76 @@
+
+--- Processing Paper 1/177 from CSV ---
+  CSV Title: Corrigendum to: The long non-coding RNA <i>SPRIGHTLY</i> and its binding partner PTBP1 regulate exon 5 skipping of <i>SMYD3</i> transcripts in group 4 medulloblastomas.
+  CSV Abstract: [This corrects the article DOI: 10.1093/noajnl/vdac120.].
+  Attempt 1/1 for ScraperAPI URL: https://scholar.google.com/scholar?q=Corrigendum%20to%3A%20The%20long%20non-coding%20RNA%20%3Ci%3ESP...
+  DEBUG: 'Cited by' link element not found for 'Corrigendum to: The long non-coding RNA <i>SPRIGHTLY</i> and its binding partner PTBP1 regulate exon 5 skipping of <i>SMYD3</i> transcripts in group 4 medulloblastomas.'.
+  DEBUG: Main article 'The long non-coding RNA SPRIGHTLY and its binding partner PTBP1 regulate exon 5 skipping of SMYD3 transcripts in group 4 medulloblastomas' found, but 'Cited by' link is missing.
+  No 'Cited by' link found for this main article on Google Scholar.
+
+--- Processing Paper 2/177 from CSV ---
+  CSV Title: Pediatric diffuse midline glioma: Understanding the mechanisms and assessing the next generation of personalized therapeutics.
+  CSV Abstract: Diffuse midline glioma (DMG) is a pediatric cancer that originates in the midline structures of the brain. Prognosis of DMG patients remains poor due to the infiltrative nature of these tumors and the protection they receive from systemically delivered therapeutics via an intact blood-brain barrier (BBB), making treatment difficult. While the cell of origin remains disputed, it is believed to reside in the ventral pons. Recent research has pointed toward epigenetic dysregulation inducing an OPC-like transcriptomic signature in DMG cells. This epigenetic dysregulation is typically caused by a mutation (K27M) in one of two histone genes-<i>H3F3A</i> or <i>HIST1H3B</i> -and can lead to a differentiation block that increases these cells oncogenic potential. Standard treatment with radiation is not sufficient at overcoming the aggressivity of this cancer and only confers a survival benefit of a few months, and thus, discovery of new therapeutics is of utmost importance. In this review, we discuss the cell of origin of DMGs, as well as the underlying molecular mechanisms that contribute to their aggressivity and resistance to treatment. Additionally, we outline the current standard of care for DMG patients and the potential future therapeutics for this cancer that are currently being tested in preclinical and clinical trials.
+  Attempt 1/1 for ScraperAPI URL: https://scholar.google.com/scholar?q=Pediatric%20diffuse%20midline%20glioma%3A%20Understanding%20the...
+  Initiating scrape for cited articles (max 50) from: https://scholar.google.com/scholar?cites=14307931228917656656&as_sdt=2005&sciodt=0,5&hl=en
+  Scraping cited-by page: https://scholar.google.com/scholar?cites=14307931228917656656&as_sdt=2005&sciodt=0,5&hl=en...
+  Attempt 1/1 for ScraperAPI URL: https://scholar.google.com/scholar?cites=14307931228917656656&as_sdt=2005&sciodt=0,5&hl=en...
+    Collected Citing Article 1:
+      Title: [HTML][HTML] Decoding diffuse midline gliomas: a comprehensive review of pathogenesis, diagnosis and treatment
+      Authors: S Al Sharie, D Abu Laban, M Al-Hussaini - Cancers, 2023
+      Abstract: Simple Summary Diffuse midline glioma (DMG) is a highly aggressive brain tumor primarily affecting children and young adults. It grows diffusely in midline structures. Unfortunately …
+      Keywords: N/A (often not directly available on results page)
+    Collected Citing Article 2:
+      Title: [HTML][HTML] Diffuse midline gliomas: challenges and new strategies in a changing clinical landscape
+      Authors: U Tosi, M Souweidane - Cancers, 2024
+      Abstract: Simple Summary Diffuse midline gliomas are rare tumors of childhood characterized by a midline location, a diffuse-infiltrative growth pattern, and newly described genetic and …
+      Keywords: N/A (often not directly available on results page)
+    Collected Citing Article 3:
+      Title: A specific form of cPRC1 containing CBX4 is co-opted to mediate oncogenic gene repression in diffuse midline glioma
+      Authors: E Lagan, D Gannon, AJ Silva, P Bibawi, AM Doherty… - Molecular Cell, 2025
+      Abstract: Diffuse midline glioma (DMG) is a fatal childhood brain tumor characterized primarily by mutant histone H3 (H3K27M). H3K27M causes a global reduction in Polycomb repressive …
+      Keywords: N/A (often not directly available on results page)
+    Collected Citing Article 4:
+      Title: Molecular Characterization and Treatment Approaches for Pediatric H3 K27-Altered Diffuse Midline Glioma: Integrated Systematic Review of Individual Clinical Trial …
+      Authors: S Damodharan, A Abbott, K Kellar, Q Zhao, M Dey - Cancers, 2023
+      Abstract: Simple Summary Diffuse midline glioma, H3 K27-altered are central nervous system tumors that primarily affect the pediatric population. Currently, there are no curative therapies, with …
+      Keywords: N/A (often not directly available on results page)
+    Collected Citing Article 5:
+      Title: Long-term survival after cordectomy in a case of spinal cord diffuse midline glioma, H3K27-altered: illustrative case
+      Authors: D Sato, H Takami, S Tanaka, S Takayanagi… - … of Neurosurgery: Case …, 2023
+      Abstract: BACKGROUND Spinal cord diffuse midline glioma, H3K27-altered, is an extremely rare entity with a poor prognosis. However, its optimal treatment remains poorly defined …
+      Keywords: N/A (often not directly available on results page)
+    Collected Citing Article 6:
+      Title: Pediatric high grade gliomas: A comprehensive histopathological, immunohistochemical and molecular integrated approach in routine practice
+      Authors: S Das, S Ahlawat, AK Panda, J Sarangi, P Jain… - … -Research and Practice, 2024
+      Abstract: Pediatric high grade gliomas have undergone remarkable changes in recent time with discovery of new molecular pathways. They have been added separately in current WHO …
+      Keywords: N/A (often not directly available on results page)
+    Collected Citing Article 7:
+      Title: Chimeric antigen receptor-macrophages: Emerging next-generation cell therapy for brain cancer
+      Authors: MJA Koppers, M Monnikhof, J Meeldijk… - Neuro-Oncology …, 2025
+      Abstract: Adoptive cell-based therapy utilizing chimeric antigen receptor (CAR)-T technology holds promise in the field of neuro-oncology. Significant progress has been made in enhancing …
+      Keywords: N/A (often not directly available on results page)
+    Collected Citing Article 8:
+      Title: [HTML][HTML] PALB2 deficiency may sensitize H3K27M-mutant pediatric HGG cells to BMN673/talazoparib
+      Authors: X Guan, X Xu, X Mo, H Deng - Frontiers in Oncology, 2025
+      Abstract: Backgroud Pediatric high-grade glioma (pHGG) with the histone H3 Lys27Met substitution (H3K27M) is a devastating disease with a high mortality rate in children and adolescents …
+      Keywords: N/A (often not directly available on results page)
+    Collected Citing Article 9:
+      Title: Frequency and outcomes of midline gliomas in a tertiary care hospital in Pakistan: a retrospective study
+      Authors: S Zahid, F Bashir, A Mustansir, K Minhas… - Child's Nervous …, 2025
+      Abstract: Introduction Midline structures in the central nervous system include the thalamus, brainstem, and spinal cord. Within the midline tumors, Diffuse midline gliomas (DMGs) and …
+      Keywords: N/A (often not directly available on results page)
+    Collected Citing Article 10:
+      Title: Specific cPRC1 complexes are co-opted to mediate oncogenic gene repression in diffuse midline glioma
+      Authors: D Gannon, E Lagan, AJ Silva, P Bibawi, AM Doherty… - bioRxiv, 2023
+      Abstract: Diffuse midline glioma (DMG) is a fatal childhood brain tumour characterised primarily by mutant histone H3 (H3K27M). H3K27M causes a global reduction in Polycomb Repressive …
+      Keywords: N/A (often not directly available on results page)
+  DEBUG: No 'Next' button found on current cited-by page. Ending pagination.
+  Collected 10 citing articles in total for 'Pediatric diffuse midline glioma: Understanding the mechanisms and assessing the next generation of personalized therapeutics.'.
+
+--- Processing Paper 3/177 from CSV ---
+  CSV Title: Humanistic nursing tailored to the needs of young men with cancer.
+  CSV Abstract: The goal of this study is to describe and understand humanistic nursing that is tailored to the needs of young men (18-39 years) with cancer. Eight young men with cancer (n = 8, average age = 28 years) were interviewed individually. Two themes emerged from the interviews: (1) trust between nurse and patient is paramount; and (2) this patient population has needs that are not currently being met through the humanistic nursing approach. The results of the iterative qualitative analysis of the data suggest that humanistic nursing tailored to young men with cancer should address their need to express their feelings, to be active and to receive psychological support.
+  Attempt 1/1 for ScraperAPI URL: https://scholar.google.com/scholar?q=Humanistic%20nursing%20tailored%20to%20the%20needs%20of%20young...
+  No expected search results container ('gs_ri') found for query: 'Humanistic nursing tailored to the needs of young men with cancer.' on the page returned by ScraperAPI. This might mean the paper wasn't found or the page structure changed.
+  Likely CAPTCHA detected by ScraperAPI. ScraperAPI should handle this, if it persists, check ScraperAPI dashboard.
+  Could not find Google Scholar details for 'Humanistic nursing tailored to the needs of young men with cancer.'. Skipping cited articles for this paper.
