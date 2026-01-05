@@ -54,11 +54,12 @@ Citation Graph  -->  GCN Layers  -->  Structural Logits
         |
         +---------------- Fusion ----------------> Final Prediction
 
+
   - GCN captures citation and relational structure
 
   - LLM captures deep semantic meaning
 
-  - Outputs are combined at the logit level```
+  - Outputs are combined at the logit level
 
 
 ## 📊 **Graph Construction**
