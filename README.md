@@ -58,7 +58,7 @@ Citation Graph  -->  GCN Layers  -->  Structural Logits
 
   - LLM captures deep semantic meaning
 
-  - Outputs are combined at the logit level
+  - Outputs are combined at the logit level```
 
 
 ## 📊 **Graph Construction**
@@ -135,7 +135,7 @@ CiteGCN-LLM is trained end-to-end with a **joint binary cross-entropy loss**:
 ├── train.py
 ├── evaluate.py
 ├── utils/
-└── README.md
+└── README.md```
 
 
 
