@@ -45,18 +45,21 @@ Scholarly documents are inherently interconnected through citations, authorship,
  
 
 ## 🏗️ **Framework Architecture**
-  Paper Abstracts ──▶ LLM Encoder ──▶ Semantic Logits
-       │
-       ▼
-  Citation Graph ──▶ GCN Layers ──▶ Structural Logits
-       │
-       └────────────── Fusion ──────────────▶ Final Prediction
+
+```text
+Paper Abstracts  -->  LLM Encoder  -->  Semantic Logits
+        |                                
+        v                                
+Citation Graph  -->  GCN Layers  -->  Structural Logits
+        |
+        +---------------- Fusion ----------------> Final Prediction
 
   - GCN captures citation and relational structure
 
   - LLM captures deep semantic meaning
 
   - Outputs are combined at the logit level
+
 
 ## 📊 **Graph Construction**
 **RPCG-1: Paper–Word–Citation Graph**
@@ -90,9 +93,7 @@ Both graphs are normalized and processed using standard GCN message passing.
 
 CiteGCN-LLM is trained end-to-end with a **joint binary cross-entropy loss**:
 
-	​$$
-\mathcal{L} = \mathcal{L}_{\mathrm{GCN}} + \mathcal{L}_{\mathrm{LLM}}
-$$
+	​$$\mathcal{L} = \mathcal{L}_{\mathrm{GCN}} + \mathcal{L}_{\mathrm{LLM}}$$
 
 - Uses BCEWithLogitsLoss
 
@@ -114,7 +115,11 @@ $$
 
 - RPCG-2 shows strong gains on socially connected datasets
 
-##🗂️ Repository Structure
+
+## 🗂️ Repository Structure
+
+```text
+.
 ├── data/
 │   ├── arxiv/
 │   ├── dblp/
@@ -122,7 +127,7 @@ $$
 │   └── pubmed/
 ├── graph/
 │   ├── build_rpcg1.py
-│   ├── build_rpcg2.py
+│   └── build_rpcg2.py
 ├── models/
 │   ├── gcn.py
 │   ├── llm_encoder.py
@@ -131,6 +136,7 @@ $$
 ├── evaluate.py
 ├── utils/
 └── README.md
+
 
 
 ## 🔧 Requirements
